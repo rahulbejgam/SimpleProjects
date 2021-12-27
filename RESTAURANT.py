@@ -19,6 +19,7 @@ while(1):
     ind=(input())
     if not ind.isdigit():
         print("Invalid Input, Insert the Sl.no against your choice ")
+        f = open("BILLDETAILS.txt", "a")
         f.write("*\*\*\*\*\*\*\ EXITED HERE DUE TO WRONG I/O /*/*/*/*/*/*/*/*/*\n")
         exit()
     ind=int(ind)
@@ -29,6 +30,7 @@ while(1):
             print("You have chose the invalid item")
             print("Please call for assistance")
             print("**********************************")
+            f = open("BILLDETAILS.txt", "a")
             f.write("*\*\*\*\*\*\*\EXITED HERE/*/*/*/*/*/*/*/*/*\n")
             exit()
     else:
@@ -57,3 +59,4 @@ while(1):
     print("       THANK YOU")
     print("****** VISIT AGAIN ********")
     s.sleep(0.9)
+    f.close()
