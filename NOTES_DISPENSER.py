@@ -48,4 +48,4 @@ def Dispenser(A):
             exit()
 while(1):
     Amount=(input("\nEnter the amount to dispense: "))
-    Dispenser(Amount)
+    Dispenser(Amount) 
